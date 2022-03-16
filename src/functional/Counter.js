@@ -1,6 +1,4 @@
 import {useState, useEffect} from 'react'
-
-
 const Counter = (props) => {
   //we render, then useEffect is called; 
   useEffect(()=>{
