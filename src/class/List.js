@@ -15,16 +15,16 @@ class List extends React.Component{
         showForm: false,
       };
     }
-    
+  
     addTaco =(taco) =>{
-      //db call skipping
+      //db call (skipping)
 
       //update state
       let updateTacos = [taco, ...this.state.tacos]
       this.setState({
         tacos:updateTacos
       })
-      //what is would look like in a fucntional component
+      //what is would look like in a functional component
       //let updateTacos = [taco,...tacos]
       //this.setTacos(updateTacos)
 

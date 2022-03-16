@@ -21,7 +21,9 @@ class TacoForm extends React.Component{
   })           //if e.target.name is 'price' it will evaluate that and make that key 'price'
              }             //the value will be the thing from my form  
   handleSubmit=(e)=>{
-        e.preventDefault()
+    //don't want to get rid of all pre filled form values so use preventDefault    
+    e.preventDefault()
+
         console.log(this.state)
         // use addTaco prop to add
         this.props.addTaco(this.state)
